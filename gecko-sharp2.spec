@@ -16,7 +16,7 @@ Provides:	gtkmozembed-sharp == %{version}
 Requires:	gtk-sharp2
 Requires:	libmozilla-firefox
 BuildRequires:	gtk2-devel
-BuildRequires:	gtk-sharp2
+BuildRequires:	gtk-sharp2-devel
 BuildRequires:	mono-devel
 BuildRequires:	mono-tools
 BuildArch:	noarch

@@ -20,6 +20,7 @@ BuildRequires:	gtk-sharp2-devel
 BuildRequires:	mono-devel
 BuildRequires:	mono-tools
 BuildArch:	noarch
+BuildRoot:	%{_tmppath}/%{name}-%{version}-buildroot
 %define _requires_exceptions ^lib.*
 
 %description 

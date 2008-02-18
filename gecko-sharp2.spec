@@ -4,7 +4,7 @@
 %define release		%mkrel 4
 %define pkgconfigdir	%_datadir/pkgconfig
 
-Summary:	Gecko-sharp is a C# language binding for the gtkembedmoz widget
+Summary:	C# language binding for the gtkembedmoz widget
 Name:		%{name}
 Version:	%{version}
 Release:	%{release}

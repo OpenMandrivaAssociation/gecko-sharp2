@@ -1,7 +1,7 @@
 %define oname		gecko-sharp-2.0
 %define name		gecko-sharp2
 %define version		0.13
-%define release		%mkrel 1
+%define release		%mkrel 2
 %define pkgconfigdir	%_datadir/pkgconfig
 
 Summary:	C# language binding for the gtkembedmoz widget
@@ -21,7 +21,7 @@ BuildRequires:	mono-devel
 BuildRequires:	mono-tools
 BuildArch:	noarch
 BuildRoot:	%{_tmppath}/%{name}-%{version}-buildroot
-%define _requires_exceptions ^lib.*
+%define _requires_exceptions ^lib\\|lib.*glib2.0_0
 
 %description 
 Gecko-sharp is a C# language binding for the gtkembedmoz widget. You

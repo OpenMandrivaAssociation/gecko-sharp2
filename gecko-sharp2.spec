@@ -1,20 +1,24 @@
 %define oname		gecko-sharp-2.0
 %define name		gecko-sharp2
 %define version		0.13
-%define release		%mkrel 2
+%define release		%mkrel 3
 %define pkgconfigdir	%_datadir/pkgconfig
 
+%define xulrunner 1.9
 Summary:	C# language binding for the gtkembedmoz widget
 Name:		%{name}
 Version:	%{version}
 Release:	%{release}
 Source:		http://go-mono.com/sources/gecko-sharp-2.0/%{oname}-%{version}.tar.bz2
+#gw from Fedora, use xulrunner
+Patch:		gecko-sharp-2.0-0.12-xulrunner.patch
 URL:		http://www.go-mono.com
 License:	LGPLv2+ and MPLv1.1
 Group:		System/Libraries
 Provides:	gtkmozembed-sharp == %{version}
 Requires:	gtk-sharp2
-Requires:	libmozilla-firefox
+Requires:	%mklibname xulrunner %xulrunner
+BuildRequires:	xulrunner-devel >= %xulrunner
 BuildRequires:	gtk2-devel
 BuildRequires:	gtk-sharp2-devel
 BuildRequires:	mono-devel
@@ -42,6 +46,7 @@ Monodoc format.
 
 %prep
 %setup -q -n %oname-%version
+%patch -p1
 
 %build
 ./configure --prefix=%_prefix --libdir=%_prefix/lib

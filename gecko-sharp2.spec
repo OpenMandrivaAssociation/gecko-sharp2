@@ -1,7 +1,7 @@
 %define oname		gecko-sharp-2.0
 %define name		gecko-sharp2
 %define version		0.13
-%define release		%mkrel 3
+%define release		%mkrel 4
 %define pkgconfigdir	%_datadir/pkgconfig
 
 %define xulrunner 1.9
@@ -17,7 +17,8 @@ License:	LGPLv2+ and MPLv1.1
 Group:		System/Libraries
 Provides:	gtkmozembed-sharp == %{version}
 Requires:	gtk-sharp2
-Requires:	%mklibname xulrunner %xulrunner
+#gw: it needs libxulrunner, but this is noarch
+Requires:	xulrunner >= %xulrunner
 BuildRequires:	xulrunner-devel >= %xulrunner
 BuildRequires:	gtk2-devel
 BuildRequires:	gtk-sharp2-devel

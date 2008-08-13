@@ -17,8 +17,7 @@ License:	LGPLv2+ and MPLv1.1
 Group:		System/Libraries
 Provides:	gtkmozembed-sharp == %{version}
 Requires:	gtk-sharp2
-#gw: it needs libxulrunner, but this is noarch
-Requires:	xulrunner >= %xulrunner
+Requires:	libxulrunner >= %xulrunner
 BuildRequires:	xulrunner-devel >= %xulrunner
 BuildRequires:	gtk2-devel
 BuildRequires:	gtk-sharp2-devel

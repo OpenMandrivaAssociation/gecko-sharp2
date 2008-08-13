@@ -1,7 +1,7 @@
 %define oname		gecko-sharp-2.0
 %define name		gecko-sharp2
 %define version		0.13
-%define release		%mkrel 4
+%define release		%mkrel 5
 %define pkgconfigdir	%_datadir/pkgconfig
 
 %define xulrunner 1.9

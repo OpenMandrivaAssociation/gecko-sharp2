@@ -12,7 +12,7 @@ Release:	%{release}
 Source:		http://go-mono.com/sources/gecko-sharp-2.0/%{oname}-%{version}.tar.bz2
 #gw from Fedora, use xulrunner
 Patch:		gecko-sharp-2.0-0.12-xulrunner.patch
-URL:		http://www.go-mono.com
+URL:		https://www.go-mono.com
 License:	LGPLv2+ and MPLv1.1
 Group:		System/Libraries
 Provides:	gtkmozembed-sharp == %{version}
